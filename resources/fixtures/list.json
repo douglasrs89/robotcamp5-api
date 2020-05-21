@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "title": "Enduro",
+      "category": "Atari",
+      "price": "99.99",
+      "description": "Um jogo semfim.",
+      "producers": ["Atari"],
+      "cover": "enduro.jpg"
+    },
+    {
+      "title": "Turbo Game",
+      "category": "Console",
+      "price": "99.99",
+      "description": "Nintendo do Paraguai.",
+      "producers": ["Sem Marca"],
+      "cover": "turbo-game.jpg"
+    },
+    {
+      "title": "River Raid",
+      "category": "Atari",
+      "price": "99.99",
+      "description": "Tiro pra todo lado na navinha.",
+      "producers": ["Atari"],
+      "cover": "river-raid.jpg"
+    }
+  ]
+}
