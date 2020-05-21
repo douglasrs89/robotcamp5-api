@@ -1,0 +1,8 @@
+{
+  "title": "Neo Geo",
+  "category": "Console",
+  "price": "99.99",
+  "description": "Um console para playboys.",
+  "producers": ["Neo Geo"],
+  "cover": "neo-geo.jpg"
+}

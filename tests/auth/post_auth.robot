@@ -6,7 +6,7 @@ Library     RequestsLibrary
 
 Resource    ../../resources/services.robot
 
-Suite Setup    Auth Token    ${user_email}    ${user_password}
+Suite Setup    Set Suite Var Auth Token    ${user_email}    ${user_password}
 
 ***Test Cases***
 

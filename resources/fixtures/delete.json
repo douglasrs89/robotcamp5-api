@@ -1,0 +1,8 @@
+{
+  "title": "Sega Saturn",
+  "category": "Consoles",
+  "price": "299.99",
+  "description": "Um console para playboys.",
+  "producers": ["Sega"],
+  "cover": "sega.jpg"
+}
