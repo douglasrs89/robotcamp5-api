@@ -70,3 +70,15 @@ Delete Product
   ${resp}=          Delete Request    pixel    /products/${id}    headers=${headers}
   
   [Return]    ${resp}
+
+Put Product
+  [Arguments]    ${id}    ${payload}    ${remove}=dont_remove
+  Run Keyword If    "${remove}" == "before_remove"
+  ...               Remove Product By Title    ${payload['title']}
+  
+  Create Session    pixel    ${base_url}
+
+  &{headers}=       Create Dictionary    Authorization=${token}     Content-Type=application/json
+  ${resp}=          Put Request    pixel    /products/${id}    data=${payload}    headers=${headers}
+  
+  [Return]    ${resp}
