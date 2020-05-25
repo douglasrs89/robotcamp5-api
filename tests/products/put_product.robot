@@ -1,7 +1,7 @@
 
 ***Settings***
 Documentation    PUT /products
-...              Testes do cadastro de produtos consumindo a API
+...              Testes de atualização de produtos consumindo a API
 
 Library    RequestsLibrary
 
@@ -21,6 +21,9 @@ Update Product
 
   ${put_resp}=     Put Product    ${id}    ${product_update}    before_remove
   Status Should Be    204    ${put_resp}
+  
+  ${resp_product}=    Get Product  ${id}
+  Should Be Equal    ${resp_product.json()['title']}    ${product_update['title']}
 
 Conflict To Update Product
   ${list_products}=    Get Data From Json File    products_to_conflict.json
