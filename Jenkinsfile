@@ -12,7 +12,7 @@ pipeline {
             sh 'pip install -r requirements.txt'
          }
       }
-      stage('Testing'){
+      stage('Testing') {
           steps {
               sh 'robot -d ./logs tests/'
           }
@@ -20,6 +20,12 @@ pipeline {
               always {
                   robot 'logs'
               }
+          }
+      }
+      stage('UAT') {
+          steps {
+             echo 'Simulando a provação do PO'
+             input(message: 'Você aprova essa versão?', ok: 'Sim :)')
           }
       }
    }
