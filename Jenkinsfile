@@ -15,6 +15,10 @@ pipeline {
       stage('Testing'){
           steps {
               sh 'robot -d ./logs tests/'
+          }
+      }
+      post { 
+          always {
               robot 'logs'
           }
       }

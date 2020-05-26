@@ -19,8 +19,8 @@ Delete Product
 
   Status Should Be    204    ${resp}
 
-# Product Not Found
-#   [Tags]    not_found
+Product Not Found
+  [Tags]    not_found
 
-#   ${resp}=    Delete Product    1500
-#   Status Should Be    404    ${resp}
+  ${resp}=    Delete Product    1500
+  Status Should Be    404    ${resp}
