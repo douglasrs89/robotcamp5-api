@@ -16,10 +16,10 @@ pipeline {
           steps {
               sh 'robot -d ./logs tests/'
           }
-      }
-      post { 
-          always {
-              robot 'logs'
+          post {
+              always {
+                  robot 'logs'
+              }
           }
       }
    }
