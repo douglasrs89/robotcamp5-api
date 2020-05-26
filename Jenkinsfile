@@ -15,7 +15,7 @@ pipeline {
       stage('Testing'){
           steps {
               sh 'robot -d ./logs tests/'
-              robot 'logs'
+              robot onlyCritical: false, outputPath: 'logs'
           }
       }
    }
