@@ -15,7 +15,7 @@ pipeline {
       stage('Testing'){
           steps {
               sh 'robot -d ./logs tests/'
-              robot onlyCritical: false, outputPath: 'logs', passThreshold: 10.0
+              robot 'logs'
           }
       }
    }
