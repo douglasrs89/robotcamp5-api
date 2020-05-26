@@ -5,7 +5,7 @@ Library     RequestsLibrary
 Library    libs/database.py
 
 ***Variables***
-${base_url}         http://localhost:3333
+${base_url}         http://pixel-api:3333
 ${user_email}       douglas@ninjapixel.com
 ${user_password}    q1w2E3R4@!
 
